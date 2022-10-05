@@ -3,7 +3,7 @@ import { Box, Grid, TextField } from "@mui/material";
 import React, { ChangeEvent, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import useLocalStorage from "react-use-localstorage";
-import UsuarioLogin from "../../model/UsuarioLogin";
+import UsuarioLogin from "../../model/UserLogin";
 import { api } from "../../services/Service";
 import "./Login.css";
 
