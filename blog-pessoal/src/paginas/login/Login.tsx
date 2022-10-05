@@ -1,22 +1,22 @@
-import { Typography, Button } from "@material-ui/core";
-import { Box, Grid, TextField } from "@mui/material";
-import React, { ChangeEvent, useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import useLocalStorage from "react-use-localstorage";
-import UsuarioLogin from "../../model/UserLogin";
-import { api } from "../../services/Service";
-import "./Login.css";
+import { Typography, Button } from '@material-ui/core';
+import { Box, Grid, TextField } from '@mui/material';
+import React, { ChangeEvent, useEffect, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import useLocalStorage from 'react-use-localstorage';
+import UsuarioLogin from '../../model/UserLogin';
+import { api, login } from '../../services/Service';
+import './Login.css';
 
 function Login() {
   let navigate = useNavigate();
-  const [token, setToken] = useLocalStorage("token");
+  const [token, setToken] = useLocalStorage('token');
   const [userLogin, setUserLogin] = useState<UsuarioLogin>({
     id: 0,
-    nome: "",
-    usuario: "",
-    senha: "",
-    foto: "",
-    token: "",
+    nome: '',
+    usuario: '',
+    senha: '',
+    foto: '',
+    token: '',
   });
 
   function updateModel(event: ChangeEvent<HTMLInputElement>) {
@@ -28,13 +28,16 @@ function Login() {
 
   async function conectar(event: ChangeEvent<HTMLFormElement>) {
     event.preventDefault();
-    const resposta = await api.post("usuarios/logar", userLogin);
-    setToken(resposta.data.token);
+    try {
+      await login('usuarios/logar', userLogin, setToken);
+    } catch (error) {
+      alert('Dados de usuário inválidos, Tente novamente.')
+    }
   }
 
   useEffect(() => {
-    if (token !== "") {
-      navigate("/home");
+    if (token !== '') {
+      navigate('/home');
     }
   }, [token]);
 
@@ -79,7 +82,7 @@ function Login() {
                 margin="normal"
               />
               <Box display="flex" justifyContent="center" marginTop={2}>
-                <Button type="submit" variant="contained" style={{ backgroundColor: "#a00000", color: "#ffffff"}}>
+                <Button type="submit" variant="contained" color="primary">
                   Entrar
                 </Button>
               </Box>
