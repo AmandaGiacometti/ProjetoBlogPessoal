@@ -1,57 +1,82 @@
-import { AppBar, Toolbar, Box, Typography, Grid } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
   return (
-    <>
-      <AppBar position="static">
-        <Toolbar variant="dense" style={{ backgroundColor: "#a00000" }}>
-          <Box className="cursor">
-            <Typography variant="h5" color="inherit">
-              Blog da Amanda
-            </Typography>
-          </Box>
+    
+    <div className="containerzao">
 
-          <Grid container justifyContent="flex-end">
-            <Box display="flex" justifyContent="start">
-              <Box mx={1} className="cursor">
-                <Typography variant="h6" color="inherit">
-                  Home
-                </Typography>
-              </Box>
+        <div className="upperNav">
 
-              <Box mx={1} className="cursor">
-                <Typography variant="h6" color="inherit">
-                  Postagens
-                </Typography>
-              </Box>
+            <div className="translate">
+              <img
+                className="ukFlag"
+                src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/uk.png"
+                alt=""
+                width="20vw"
+                height="20vw"
+              />
+              <p className="clickTranslate">Translate</p>
+            </div>
 
-              <Box mx={1} className="cursor">
-                <Typography variant="h6" color="inherit">
-                  Temas
-                </Typography>
-              </Box>
+            <div className="searchImage">
+              <img 
+              src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/pesquisa.png" 
+              alt="" />
+            </div>
 
-              <Box mx={1} className="cursor">
-                <Typography variant="h6" color="inherit">
-                  Cadastrar Temas
-                </Typography>
-              </Box>
+        </div>
 
-              <Link to="/login" className="logout">
-                <Box mx={1} className="cursor">
-                  <Typography variant="h6" color="inherit">
-                    Logout
-                  </Typography>
-                </Box>
-              </Link>
+        <div className="fotoBarraca">
+            <img 
+            src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/barraca.png" 
+            alt="" />
+        </div>
+
+        <div className="navbarPrincipal">      
+            <Box className="opcoes">
+              <Typography>
+                Home
+              </Typography>
             </Box>
-          </Grid>
-        </Toolbar>
-      </AppBar>
-    </>
+
+            <Box className="opcoes">
+              <Typography>
+                Postagens
+              </Typography>
+            </Box>
+
+            <Box className="opcoes">
+              <Typography>
+                Temas
+              </Typography>
+            </Box>
+
+            <Box className="opcoes">
+              <Typography>
+                Cadastrar temas
+              </Typography>
+            </Box>
+
+            <Link className="opcoes" to="/login">
+              <Box>
+                <Typography>
+                  Logout
+                </Typography>
+              </Box>
+            </Link>
+
+            <Box className="opcoes">
+              <Typography>
+                Sobre mim
+              </Typography>
+            </Box>
+
+        </div>
+
+    </div>
   );
 }
 

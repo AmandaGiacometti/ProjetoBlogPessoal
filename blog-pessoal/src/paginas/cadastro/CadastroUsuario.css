@@ -1,7 +1,50 @@
-.bg-cadastro {
-  min-height: 100vh;
-  background-image: url("https://i.imgur.com/c2Szk3h.jpg");
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
+.megaContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 74.8vw;
+  margin-left: 12vw;
+}
+.coluna1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 00.5vw;
+  margin-bottom: 0vw;
+}
+.caixaFormulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45vw;
+}
+.coluna3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 00.5vw;
+  margin-bottom: 0vw;
+}
+
+.coluna1 img {
+  margin: 0.5vw;
+  opacity: 0.8;
+}
+.coluna3 img {
+  margin: 0.5vw;
+  opacity: 0.8;
+}
+.coluna1 img:hover {
+  opacity: 1;
+}
+.coluna3 img:hover {
+  opacity: 1;
+}
+
+.formulario {
+  width: 30vw;
 }

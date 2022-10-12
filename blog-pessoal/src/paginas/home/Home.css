@@ -1,16 +1,9 @@
-.titulo {
-  font-size: 6rem;
-  color: #0000ff;
-  text-align: center;
+.caxona {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-.imagem {
-  width: 500px;
-  height: 500px;
-  display: block;
-  margin: 0 auto;
-}
-
-.fundo {
-  background-color: pink;
+.caxona img {
+  margin: 1vw;
 }

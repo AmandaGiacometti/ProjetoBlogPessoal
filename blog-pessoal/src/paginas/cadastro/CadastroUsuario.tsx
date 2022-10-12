@@ -65,13 +65,33 @@ function CadastroUsuario() {
   }, [userResult]);
 
   return (
-    <>
-      <Grid container alignItems="center" justifyContent="center">
-        <Grid item xs={6} className="bg-cadastro"></Grid>
-        <Grid container xs={6} justifyContent="center">
-          <Grid item xs={8} justifyContent="center">
-            <form onSubmit={cadastrar}>
-              <Typography variant="h2">Cadastre-se</Typography>
+    
+    <div className="megaContainer">
+
+          <div className="coluna1">
+              <img 
+              src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/wide/oxala%20wide.jpg" 
+              alt="" 
+              height="190vw"
+              />
+              <img 
+              src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/wide/regia%20wide.jpg" 
+              alt="" 
+              height="190vw"
+              />
+              <img 
+              src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/wide/lencois%20wide.jpg" 
+              alt="" 
+              height="190vw"
+              />
+          </div>      
+          
+          <div className="caixaFormulario">
+          <form onSubmit={cadastrar} className="formulario">
+
+              <Typography>
+                Cadastre-se
+              </Typography>
 
               <TextField
                 required
@@ -96,7 +116,7 @@ function CadastroUsuario() {
                 fullWidth
                 margin="normal"
                 onChange={(event: ChangeEvent<HTMLInputElement>) =>
-                  updateModel(event)
+                updateModel(event)
                 }
               />
               <TextField
@@ -109,7 +129,7 @@ function CadastroUsuario() {
                 fullWidth
                 margin="normal"
                 onChange={(event: ChangeEvent<HTMLInputElement>) =>
-                  updateModel(event)
+                updateModel(event)
                 }
               />
               <TextField
@@ -123,7 +143,7 @@ function CadastroUsuario() {
                 type="password"
                 margin="normal"
                 onChange={(event: ChangeEvent<HTMLInputElement>) =>
-                  updateModel(event)
+                updateModel(event)
                 }
               />
               <TextField
@@ -137,25 +157,42 @@ function CadastroUsuario() {
                 type="password"
                 margin="normal"
                 onChange={(event: ChangeEvent<HTMLInputElement>) =>
-                  confirmarSenhaHandle(event)
+                confirmarSenhaHandle(event)
                 }
               />
 
-              <Box display="flex" justifyContent="space-around" marginTop={2}>
-                <Link to="/login" className="text-decoration-none">
-                  <Button type="submit" variant="contained" color="secondary">
-                    Cancelar
-                  </Button>
-                </Link>
-                <Button type="submit" variant="contained" color="primary">
-                  Cadastrar
+              <Link to="/login">
+                <Button type="submit" variant="contained">
+                  Cancelar
                 </Button>
-              </Box>
-            </form>
-          </Grid>
-        </Grid>
-      </Grid>
-    </>
+              </Link>
+                
+              <Button type="submit" variant="contained" /*disabled={!cadastro}*/ > 
+                Cadastrar
+              </Button>
+
+          </form>
+          </div>
+
+          <div className="coluna3">
+              <img 
+              src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/wide/cachadaco%20wide.jpg" 
+              alt="" 
+              height="190vw"
+              />
+              <img 
+              src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/wide/tuiuiu%20wide.jpg" 
+              alt="" 
+              height="190vw"
+              />
+              <img 
+              src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/wide/madrugada%20wide.jpg" 
+              alt="" 
+              height="190vw"
+              />
+          </div>
+
+    </div>
   );
 }
 
