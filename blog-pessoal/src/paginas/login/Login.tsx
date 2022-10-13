@@ -94,7 +94,7 @@ function Login() {
                     fullWidth
                     margin="normal"
                   />
-                  <Button className="botao">
+                  <Button className="botao" type='submit'>
                     Entrar
                   </Button>
                 </form>

@@ -6,7 +6,7 @@ function Home() {
 
       <div className="caxona">
             <img 
-            src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/pqpppppppppp.png" 
+            src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/Fotona%20Home.png" 
             alt="" 
             width="1006vw"
             />
