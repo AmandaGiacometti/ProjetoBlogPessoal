@@ -6,10 +6,15 @@ import Usuario from '../../model/Usuario';
 import { cadastroUsuario } from '../../services/Service';
 import './CadastroUsuario.css';
 
+
 function CadastroUsuario() {
   let navigate = useNavigate();
 
   const [confirmarSenha, setConfirmarSenha] = useState<String>('');
+
+  const [cadastro, setCadastro] = useState(false)
+
+ 
 
   function confirmarSenhaHandle(event: ChangeEvent<HTMLInputElement>) {
     setConfirmarSenha(event.target.value);
@@ -31,6 +36,12 @@ function CadastroUsuario() {
     senha: '',
     foto: '',
   });
+
+  useEffect(() => {
+    if(user.nome.length > 3 && user.usuario !== '' && user.senha.length >= 8 ) {
+      setCadastro(true)
+    }
+  }, [user])
 
   function updateModel(event: ChangeEvent<HTMLInputElement>) {
     setUser({
@@ -193,7 +204,8 @@ function CadastroUsuario() {
           </div>
 
     </div>
-  );
+
+);
 }
 
 export default CadastroUsuario;

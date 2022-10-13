@@ -1,16 +1,29 @@
 import { Typography, Button } from '@material-ui/core';
-import { Box, TextField } from '@mui/material';
+import { Box, Grid, TextField } from '@mui/material';
 import React, { ChangeEvent, useEffect, useState } from 'react';
+import { useDispatch } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
-import useLocalStorage from 'react-use-localstorage';
-import UsuarioLogin from '../../model/UserLogin';
+import { toast } from 'react-toastify';
+import UsuarioLogin from '../../model/UsuarioLogin';
 import { login } from '../../services/Service';
+import { addToken, addId } from '../../store/tokens/action';
 import './Login.css';
 
 function Login() {
   let navigate = useNavigate();
-  const [token, setToken] = useLocalStorage('token');
+  const dispatch = useDispatch()
+  const [token, setToken] = useState('')
+
   const [userLogin, setUserLogin] = useState<UsuarioLogin>({
+    id: 0,
+    nome: '',
+    usuario: '',
+    senha: '',
+    foto: '',
+    token: '',
+  });
+  
+  const [respUserLogin, setRespUserLogin] = useState<UsuarioLogin>({
     id: 0,
     nome: '',
     usuario: '',
@@ -26,20 +39,47 @@ function Login() {
     });
   }
 
+  useEffect(() => {
+    if(userLogin.usuario !== '' && userLogin.senha !== '' && userLogin.senha.length >= 8) {
+      setForm(true)
+    }
+  },[userLogin])
+
+  const [form, setForm] = useState(false)
+
   async function conectar(event: ChangeEvent<HTMLFormElement>) {
     event.preventDefault();
     try {
-      await login('usuarios/logar', userLogin, setToken);
+      await login('usuarios/logar', userLogin, setRespUserLogin);
+      toast.success('Usuario conectado. tamo juntão', {
+        theme: 'colored',
+        autoClose: 2000,
+        hideProgressBar: true
+      })
     } catch (error) {
-      alert('Dados de usuário inválidos, Tente novamente.')
+      toast.error(`Deu ruim.`, {
+        theme: 'colored',
+        autoClose: 2000,
+        hideProgressBar: true
+      })
     }
   }
 
   useEffect(() => {
     if (token !== '') {
+      dispatch(addToken(token))
       navigate('/home');
     }
   }, [token]);
+
+  //metodo para pegar o token e o id do json e guardar no redux
+  useEffect(()=> {
+    if(respUserLogin.token !== ''){
+      dispatch(addToken(respUserLogin.token))
+      dispatch(addId(respUserLogin.id.toString()))
+      navigate('/home');
+    }
+  }, [respUserLogin.token])
 
   return (
 
@@ -132,7 +172,8 @@ function Login() {
           </div>
                   
     </div>
-  );
+
+);
 }
 
 export default Login;

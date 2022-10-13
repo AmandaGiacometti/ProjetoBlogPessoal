@@ -1,11 +1,27 @@
-import React from "react";
-import { Box, Grid, Typography } from "@mui/material";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import React from 'react';
+import { Box, Grid, Typography } from '@mui/material';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from "@material-ui/icons/GitHub";
-import "./Footer.css";
+import './Footer.css'
+import { useSelector } from 'react-redux';
+import { TokenState } from '../../../store/tokens/tokenReducer';
+
 
 function Footer() {
-  return (
+
+  const token = useSelector<TokenState, TokenState["tokens"]>(
+    (state) => state.tokens
+  )
+
+  let footerContent
+
+  if(token !== '') {
+    footerContent =
+
+
+
 
   <div className="seila">  
     <div className="footerContainerzao">
@@ -43,7 +59,13 @@ function Footer() {
 
     </div>
   </div>  
-  );
+ }
+
+ return (
+   <>
+     {footerContent}
+   </>
+ );
 }
 
 export default Footer;
