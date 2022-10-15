@@ -3,68 +3,87 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 74.8vw;
-    margin-left: 12vw;
+    width: 75vw;
+    margin-left: 12.5vw;
+    margin-top: 1.5vw;
 }
+
 .coluna1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 00.5vw;
-    margin-bottom: 0vw;
+    margin: 0;
+    padding: 0;
 }
-.paginaLogin {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 45vw;
-}
-
 .coluna3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 00.5vw;
-    margin-bottom: 0vw;
+    margin: 0;
+    padding: 0;
 }
-
-.coluna1 img {
-    margin: 0.5vw;
-    opacity: 0.8;
+.polaroid {
+    width: 21vw;
+    margin: 1vw;
+    opacity: 0.9;
 }
-.coluna3 img {
-    margin: 0.5vw;
-    opacity: 0.8;
-}
-.coluna1 img:hover {
+.polaroid:hover {
     opacity: 1;
+    width: 20.75vw;
+    box-shadow: 10px 10px 18px -1.5px #808080;
 }
-.coluna3 img:hover {
-    opacity: 1;
+
+
+
+.coluna2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 28vw;
+    height: 44vw;
+    margin: 1vw;
+
 }
-
-
-
-
-
-
-
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 42vw;
+    margin-bottom: 1vw;
+}
+.logo {
+    width: 14vw;
+    border-radius: 80vw;
+    box-shadow: 10px 10px 18px -1.5px #808080;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: ffffff;
+    height: 29vw;
+    
+}
 .form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    list-style-type: none;
+    text-decoration: none;
+    text-align: justify;
+    text-align: center;
+    text-align-last: center;
+    border-radius: 30vw;
 }
 
-.cadastrar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
+
 
 /*     Lista de opções de CSS pra ficar de olho
 
@@ -103,3 +122,7 @@ cursor: pointer;
 opacity: 0.5;
 
 */
+
+
+
+

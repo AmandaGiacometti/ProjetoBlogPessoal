@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
   }
   /* Navbar de cima com barra de pesquisa e tradução */
   .upperNav {
@@ -54,6 +55,10 @@
     align-items: center;
     margin: 0.1vw;
   }
+  .fotoFotoMesmo {
+    width: 73.75vw;
+  }
+
   /* Navbar com as opções de páginas */
   .navbarPrincipal {
     width: 73.75vw;

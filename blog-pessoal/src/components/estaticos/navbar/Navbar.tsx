@@ -54,45 +54,55 @@ function Navbar() {
 <div className="fotoBarraca">
     <img 
     src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/barraca.png" 
-    alt="" />
+    alt="" 
+    className="fotoFotoMesmo"
+    />
 </div>
 
 <div className="navbarPrincipal">      
     <Box className="opcoes">
-      <Typography>
-        Home
-      </Typography>
-    </Box>
-
-    <Box className="opcoes">
-      <Typography>
-        Postagens
-      </Typography>
-    </Box>
-
-    <Box className="opcoes">
-      <Typography>
-        Temas
-      </Typography>
-    </Box>
-
-    <Box className="opcoes">
-      <Typography>
-        Cadastrar temas
-      </Typography>
-    </Box>
-
-    <Link className="opcoes" to="/login">
-      <Box>
+      <Link to="/home">
         <Typography>
-          Logout
+          Home
         </Typography>
-      </Box>
-    </Link>
+      </Link>
+    </Box>
 
     <Box className="opcoes">
+      <Link to="/posts">
+          <Typography>
+            Postagens
+          </Typography>
+      </Link>
+    </Box>
+
+    <Box className="opcoes">
+      <Link to="/temas" className="navLink">
+          <Typography>
+            Temas
+          </Typography>
+      </Link>
+    </Box>
+
+    <Box className="opcoes">
+      <Link to='/cadastroTema'>
+        <Typography>
+          Cadastrar Temas
+        </Typography>
+      </Link>
+    </Box>
+
+    <Box className="opcoes">
+      <Link to='/perfil'>
+        <Typography>
+          Perfil
+        </Typography>
+      </Link>
+    </Box>
+
+    <Box className="opcoes" onClick={goLogout}>
       <Typography>
-        Sobre mim
+        Logout
       </Typography>
     </Box>
 

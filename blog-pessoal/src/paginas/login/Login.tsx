@@ -51,16 +51,24 @@ function Login() {
     event.preventDefault();
     try {
       await login('usuarios/logar', userLogin, setRespUserLogin);
-      toast.success('Usuario conectado. tamo juntão', {
-        theme: 'colored',
-        autoClose: 2000,
-        hideProgressBar: true
+      toast('✈🌎 Boa viagem pelo blog ✈🌎', {
+        position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        theme: "light",
       })
     } catch (error) {
-      toast.error(`Deu ruim.`, {
-        theme: 'colored',
-        autoClose: 2000,
-        hideProgressBar: true
+      toast('Falha no login', {
+        position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: true,
+        closeOnClick: false,
+        pauseOnHover: false,
+        draggable: false,
+        theme: "dark",
       })
     }
   }
@@ -80,36 +88,50 @@ function Login() {
       navigate('/home');
     }
   }, [respUserLogin.token])
-
+  
+  
   return (
 
     <div className="caixotonaMae">
           
           <div className="coluna1">
               <img 
-              src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/wide/caatinga%20wide.jpeg" 
+              src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/Fotos%20retangulares/caatinga%20wide.jpeg" 
               alt="" 
-              height="190vw"
+              className="polaroid"
               />
               <img 
-              src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/wide/noronha%20wide.jpg" 
+              src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/Fotos%20retangulares/noronha%20wide.jpg" 
               alt="" 
-              height="190vw"
+              className="polaroid"
               />
               <img 
-              src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/wide/rio%20wide.jpg" 
+              src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/Fotos%20retangulares/rio%20wide.jpg" 
               alt="" 
-              height="190vw"
+              className="polaroid"
               />
           </div>  
 
 
-            <div className="paginaLogin">
+            <div className="coluna2">
+              
+              <div className="header">
+                <img 
+                  src="https://github.com/ManGiaco/BancoDeImagens/blob/main/%C3%8Dcones/Logo%20do%20blog.png?raw=true" 
+                  alt="" 
+                  width=""
+                  className="logo"
+                  />
+              </div>
+
+              <div className="formulario">
+
                 <form className="form" onSubmit={conectar}>
-                  <Typography className="entrar">
+                  <Typography>
                     Entrar
                   </Typography>
-                  <TextField className="usuario"
+
+                  <TextField 
                     onChange={(event: ChangeEvent<HTMLInputElement>) =>
                     updateModel(event)
                     }
@@ -121,7 +143,8 @@ function Login() {
                     fullWidth
                     margin="normal"
                   />
-                  <TextField className="senha"
+
+                  <TextField
                     onChange={(event: ChangeEvent<HTMLInputElement>) =>
                     updateModel(event)
                     }
@@ -134,40 +157,44 @@ function Login() {
                     fullWidth
                     margin="normal"
                   />
-                  <Button className="botao" type='submit'>
+
+                  <Button type='submit'>
                     Entrar
                   </Button>
+
                 </form>
-                <Box className="cadastrar">
-                  <Typography className="ainda">
+
+                <Box>
+                  <Typography>
                     Ainda não tem uma conta?
                   </Typography>
+
                   <Link to="/cadastro">
-                    <Typography className="cadastrase">
+                    <Typography>
                       Cadastre-se
                     </Typography>
                   </Link>
                 </Box>
+                
+              </div>
+
             </div>
 
             <div className="coluna3">
               <img 
-              src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/wide/onca%20wide.jpg" 
+              src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/Fotos%20retangulares/onca%20wide.jpg" 
               alt="" 
-
-              height="190vw"
+              className="polaroid"
               />
               <img 
-              src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/wide/paraty%20wide.jpg" 
+              src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/Fotos%20retangulares/paraty%20wide.jpg" 
               alt="" 
-
-              height="190vw"
+              className="polaroid"
               />
               <img 
-              src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/wide/caprichoso%20wide.jpeg" 
+              src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/Fotos%20retangulares/caprichoso%20wide.jpeg" 
               alt="" 
-
-              height="190vw"
+              className="polaroid"
               />
           </div>
                   
