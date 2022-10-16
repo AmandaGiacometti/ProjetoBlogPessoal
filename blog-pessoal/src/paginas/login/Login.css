@@ -35,8 +35,6 @@
     box-shadow: 10px 10px 18px -1.5px #808080;
 }
 
-
-
 .coluna2 {
     display: flex;
     flex-direction: column;
@@ -65,8 +63,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 26vw;
+    margin-top: 1.5vw;
+    width: 23.5vw;
+    border-radius: 1.5vw;
+    border-color: #a6a6a6;
+    border-style: double;
+    box-shadow: 10px 10px 18px -1.5px #808080;
     background-color: ffffff;
-    height: 29vw;
+
     
 }
 .form {
@@ -79,8 +84,36 @@
     text-align: justify;
     text-align: center;
     text-align-last: center;
-    border-radius: 30vw;
 }
+.entrar {
+    font-size: 1.75vw !important;
+    margin-top: 0.75vw !important;
+    margin-bottom: 0.5vw !important;
+}
+.usuario {
+    
+}
+.senha {
+    
+}
+.botao {
+    border-radius: 0.7vw !important;
+    background-color: #E8F0FE !important;
+    margin: 1.5vw !important;
+    font-size: 1.1vw !important;
+    box-shadow: 6px 6px 10px -1.5px #808080;
+}
+.ainda {
+
+}
+.cadastre {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0.5vw !important;
+}
+
+
 
 
 

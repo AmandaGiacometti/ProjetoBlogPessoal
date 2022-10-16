@@ -81,17 +81,17 @@ function CadastroUsuario() {
 
           <div className="coluna1">
               <img 
-              src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/wide/oxala%20wide.jpg" 
+              src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/Fotos%20retangulares/oxala%20wide.jpg" 
               alt="" 
               height="190vw"
               />
               <img 
-              src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/wide/regia%20wide.jpg" 
+              src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/Fotos%20retangulares/regia%20wide.jpg" 
               alt="" 
               height="190vw"
               />
               <img 
-              src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/wide/lencois%20wide.jpg" 
+              src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/Fotos%20retangulares/lencois%20wide.jpg" 
               alt="" 
               height="190vw"
               />
@@ -187,17 +187,17 @@ function CadastroUsuario() {
 
           <div className="coluna3">
               <img 
-              src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/wide/cachadaco%20wide.jpg" 
+              src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/Fotos%20retangulares/cachadaco%20wide.jpg" 
               alt="" 
               height="190vw"
               />
               <img 
-              src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/wide/tuiuiu%20wide.jpg" 
+              src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/Fotos%20retangulares/tuiuiu%20wide.jpg" 
               alt="" 
               height="190vw"
               />
               <img 
-              src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/wide/madrugada%20wide.jpg" 
+              src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/Fotos%20retangulares/madrugada%20wide.jpg" 
               alt="" 
               height="190vw"
               />

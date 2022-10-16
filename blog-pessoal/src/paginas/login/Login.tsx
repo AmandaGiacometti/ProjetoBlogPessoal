@@ -61,7 +61,7 @@ function Login() {
         theme: "light",
       })
     } catch (error) {
-      toast('Falha no login', {
+      toast.error('Falha no login', {
         position: "top-center",
         autoClose: 3000,
         hideProgressBar: true,
@@ -127,8 +127,8 @@ function Login() {
               <div className="formulario">
 
                 <form className="form" onSubmit={conectar}>
-                  <Typography>
-                    Entrar
+                  <Typography className="entrar">
+                    Login
                   </Typography>
 
                   <TextField 
@@ -142,6 +142,7 @@ function Login() {
                     variant="outlined"
                     fullWidth
                     margin="normal"
+                    className="usuario"
                   />
 
                   <TextField
@@ -156,21 +157,25 @@ function Login() {
                     type="password"
                     fullWidth
                     margin="normal"
+                    className="senha"
                   />
 
-                  <Button type='submit'>
+                  <Button 
+                    type='submit'
+                    className="botao"
+                  >
                     Entrar
                   </Button>
 
                 </form>
 
                 <Box>
-                  <Typography>
+                  <Typography className="ainda">
                     Ainda não tem uma conta?
                   </Typography>
 
                   <Link to="/cadastro">
-                    <Typography>
+                    <Typography className="cadastre">
                       Cadastre-se
                     </Typography>
                   </Link>
