@@ -3,48 +3,146 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 74.8vw;
-  margin-left: 12vw;
-}
-.coluna1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 00.5vw;
-  margin-bottom: 0vw;
-}
-.caixaFormulario {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 45vw;
-}
-.coluna3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 00.5vw;
-  margin-bottom: 0vw;
+  width: 75vw;
+  margin: 0;
+  margin-left: 12.5vw;
+  margin-right: 12.5vw;
 }
 
-.coluna1 img {
-  margin: 0.5vw;
-  opacity: 0.8;
+.coluna1Cadastro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
-.coluna3 img {
-  margin: 0.5vw;
-  opacity: 0.8;
+.coluna3Cadastro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
-.coluna1 img:hover {
+.polaroidd {
+  width: 21vw;
+  margin: 0.87vw;
+  opacity: 0.85;
+  border-radius: 1vw;
+}
+.polaroidd:hover {
   opacity: 1;
-}
-.coluna3 img:hover {
-  opacity: 1;
+  width: 20.75vw;
+  box-shadow: 10px 10px 18px -1.5px #808080;
 }
 
-.formulario {
-  width: 30vw;
+.coluna2Cadastro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1vw;
 }
+.formularioCadastro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 42vw;
+  width: 26vw;
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+  border-radius: 1.5vw;
+  border-color: #a6a6a6;
+  border-style: double;
+  box-shadow: 10px 10px 18px -1.5px #808080;
+  background-color: #ffffff;
+}
+.formCadastro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  text-decoration: none;
+  text-align: justify;
+  text-align: center;
+  text-align-last: center;
+}
+.tituloCadastre {
+  font-size: 2vw !important;
+  margin-top: 0.75vw !important;
+  margin-bottom: 0.5vw !important;
+  text-shadow: 0px 0px 20px #808080 !important;
+}
+.preenchimento {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5vw;
+}
+.botoes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5vw;
+}
+.botaoCadastrar {
+  border-radius: 0.7vw !important;
+  background-color: #f5f5f5 !important;
+  color: black !important;
+  text-shadow: -.30px -.30px 0 black, 
+              .30px .30px black !important;
+  letter-spacing: 0.1vw !important;
+  margin: 1vw !important;
+  font-size: 1.1vw !important;
+  box-shadow: 6px 6px 10px -1.5px #808080 !important;
+  padding-left: 1vw !important;
+  padding-right: 1vw !important;
+}
+.botaoCancelar {
+  border-radius: 0.7vw !important;
+  background-color: #f5f5f5 !important;
+  color: black !important;
+  text-shadow: -.30px -.30px 0 black, 
+              .30px .30px black !important;
+  letter-spacing: 0.1vw !important;
+  margin: 1vw !important;
+  font-size: 1.1vw !important;
+  box-shadow: 6px 6px 10px -1.5px #808080 !important;
+  padding-left: 1vw !important;
+  padding-right: 1vw !important;
+}
+
+.botaoCadastrar:hover {
+  border-radius: 0.7vw !important;
+  border-radius: 0.7vw !important;
+  background-color: #a0a0a0 !important;
+  color: #ffffff !important;
+  text-shadow: -.40px -.40px 0 white, 
+              .40px .40px white !important;
+  letter-spacing: 0.2vw !important;
+  margin: 1vw !important;
+  font-size: 1.1vw !important;
+  box-shadow: 6px 6px 10px -1.5px #808080 !important;
+  padding-left: 1.5vw !important;
+  padding-right: 1.5vw !important;
+}
+.botaoCancelar:hover {
+  border-radius: 0.7vw !important;
+  border-radius: 0.7vw !important;
+  background-color: #a0a0a0 !important;
+  color: #ffffff !important;
+  text-shadow: -.40px -.40px 0 white, 
+              .40px .40px white !important;
+  letter-spacing: 0.2vw !important;
+  margin: 1vw !important;
+  font-size: 1.1vw !important;
+  box-shadow: 6px 6px 10px -1.5px #808080 !important;
+  padding-left: 1.5vw !important;
+  padding-right: 1.5vw !important;
+}
+

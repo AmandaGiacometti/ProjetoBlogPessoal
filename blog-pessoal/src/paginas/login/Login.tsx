@@ -94,7 +94,7 @@ function Login() {
 
     <div className="caixotonaMae">
           
-          <div className="coluna1">
+          <div className="coluna1Login">
               <img 
               src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/Fotos%20retangulares/caatinga%20wide.jpeg" 
               alt="" 
@@ -113,7 +113,7 @@ function Login() {
           </div>  
 
 
-            <div className="coluna2">
+            <div className="coluna2Login">
               
               <div className="header">
                 <img 
@@ -124,10 +124,10 @@ function Login() {
                   />
               </div>
 
-              <div className="formulario">
+              <div className="formularioLogin">
 
-                <form className="form" onSubmit={conectar}>
-                  <Typography className="entrar">
+                <form className="formLogin" onSubmit={conectar}>
+                  <Typography className="tituloEntrar">
                     Login
                   </Typography>
 
@@ -142,7 +142,6 @@ function Login() {
                     variant="outlined"
                     fullWidth
                     margin="normal"
-                    className="usuario"
                   />
 
                   <TextField
@@ -157,12 +156,11 @@ function Login() {
                     type="password"
                     fullWidth
                     margin="normal"
-                    className="senha"
                   />
 
                   <Button 
                     type='submit'
-                    className="botao"
+                    className="botaoEntrar"
                   >
                     Entrar
                   </Button>
@@ -175,7 +173,7 @@ function Login() {
                   </Typography>
 
                   <Link to="/cadastro">
-                    <Typography className="cadastre">
+                    <Typography className="cliqueCadastre">
                       Cadastre-se
                     </Typography>
                   </Link>
@@ -185,7 +183,7 @@ function Login() {
 
             </div>
 
-            <div className="coluna3">
+            <div className="coluna3Login">
               <img 
               src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/Fotos%20retangulares/onca%20wide.jpg" 
               alt="" 

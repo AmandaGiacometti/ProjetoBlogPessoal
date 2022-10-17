@@ -79,31 +79,35 @@ function CadastroUsuario() {
     
     <div className="megaContainer">
 
-          <div className="coluna1">
+          <div className="coluna1Cadastro">
               <img 
               src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/Fotos%20retangulares/oxala%20wide.jpg" 
               alt="" 
-              height="190vw"
+              className="polaroidd"
               />
               <img 
               src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/Fotos%20retangulares/regia%20wide.jpg" 
               alt="" 
-              height="190vw"
+              className="polaroidd"
               />
               <img 
               src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/Fotos%20retangulares/lencois%20wide.jpg" 
               alt="" 
-              height="190vw"
+              className="polaroidd"
               />
           </div>      
           
-          <div className="caixaFormulario">
-          <form onSubmit={cadastrar} className="formulario">
+          <div className="coluna2Cadastro">
 
-              <Typography>
+          <div className="formularioCadastro">
+          
+            <form onSubmit={cadastrar} className="formCadastro">
+
+              <Typography className="tituloCadastre">
                 Cadastre-se
               </Typography>
 
+              <div className="preenchimento">
               <TextField
                 required
                 name="nome"
@@ -171,35 +175,51 @@ function CadastroUsuario() {
                 confirmarSenhaHandle(event)
                 }
               />
+              </div>
 
-              <Link to="/login">
-                <Button type="submit" variant="contained">
-                  Cancelar
-                </Button>
-              </Link>
+              <div className="botoes">
                 
-              <Button type="submit" variant="contained" /*disabled={!cadastro}*/ > 
-                Cadastrar
-              </Button>
+                <Button 
+                  type="submit" 
+                  variant="contained" 
+                  className="botaoCadastrar"
+                  /*disabled={!cadastro}*/ > 
+                  Cadastrar
+                </Button>
 
-          </form>
+                <Link to="/login">
+                  <Button 
+                    type="submit"  
+                    variant="contained"
+                    className="botaoCancelar"
+                    >
+                    Cancelar
+                  </Button>
+                </Link>
+
+              </div>
+
+            </form>
+
           </div>
 
-          <div className="coluna3">
+          </div>
+
+          <div className="coluna3Cadasttro">
               <img 
               src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/Fotos%20retangulares/cachadaco%20wide.jpg" 
               alt="" 
-              height="190vw"
+              className="polaroidd"
               />
               <img 
               src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/Fotos%20retangulares/tuiuiu%20wide.jpg" 
               alt="" 
-              height="190vw"
+              className="polaroidd"
               />
               <img 
               src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/Fotos%20retangulares/madrugada%20wide.jpg" 
               alt="" 
-              height="190vw"
+              className="polaroidd"
               />
           </div>
 

@@ -4,11 +4,13 @@
     justify-content: center;
     align-items: center;
     width: 75vw;
+    margin: 0;
+    padding: 0;
     margin-left: 12.5vw;
-    margin-top: 1.5vw;
+    margin-right: 12.5vw;
 }
 
-.coluna1 {
+.coluna1Login {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,7 +18,7 @@
     margin: 0;
     padding: 0;
 }
-.coluna3 {
+.coluna3Login {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,7 +29,8 @@
 .polaroid {
     width: 21vw;
     margin: 1vw;
-    opacity: 0.9;
+    opacity: 0.85;
+    border-radius: 1vw;
 }
 .polaroid:hover {
     opacity: 1;
@@ -35,15 +38,15 @@
     box-shadow: 10px 10px 18px -1.5px #808080;
 }
 
-.coluna2 {
+.coluna2Login {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 28vw;
     height: 44vw;
-    margin: 1vw;
-
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
 .header {
     display: flex;
@@ -58,7 +61,8 @@
     border-radius: 80vw;
     box-shadow: 10px 10px 18px -1.5px #808080;
 }
-.formulario {
+
+.formularioLogin {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,10 +75,8 @@
     border-style: double;
     box-shadow: 10px 10px 18px -1.5px #808080;
     background-color: ffffff;
-
-    
 }
-.form {
+.formLogin {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,32 +87,50 @@
     text-align: center;
     text-align-last: center;
 }
-.entrar {
+.tituloEntrar {
     font-size: 1.75vw !important;
     margin-top: 0.75vw !important;
     margin-bottom: 0.5vw !important;
+    text-shadow: 0px 0px 20px #808080 !important;
+
 }
-.usuario {
-    
-}
-.senha {
-    
-}
-.botao {
+.botaoEntrar {
     border-radius: 0.7vw !important;
-    background-color: #E8F0FE !important;
+    background-color: #f5f5f5 !important;
+    color: black !important;
+    text-shadow: -.30px -.30px 0 black, 
+                .30px .30px black;
+    letter-spacing: 0.1vw !important;
     margin: 1.5vw !important;
     font-size: 1.1vw !important;
-    box-shadow: 6px 6px 10px -1.5px #808080;
+    box-shadow: 6px 6px 10px -1.5px #808080 !important;
+    padding-left: 1vw !important;
+    padding-right: 1vw !important;
+}
+.botaoEntrar:hover {
+    border-radius: 0.7vw !important;
+    background-color: #a0a0a0 !important;
+    color: #ffffff !important;
+    text-shadow: -.40px -.40px 0 white, 
+                .40px .40px white !important;
+    letter-spacing: 0.2vw !important;
+    margin: 1.5vw !important;
+    font-size: 1.1vw !important;
+    box-shadow: 6px 6px 10px -1.5px #808080 !important;
+    padding-left: 1.5vw !important;
+    padding-right: 1.5vw !important;
 }
 .ainda {
 
 }
-.cadastre {
+.cliqueCadastre {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-bottom: 0.5vw !important;
+
+    font-size: 1.25vw !important;
+    margin-top: 0.1vw !important;
+    margin-bottom: 1vw !important;
 }
 
 
