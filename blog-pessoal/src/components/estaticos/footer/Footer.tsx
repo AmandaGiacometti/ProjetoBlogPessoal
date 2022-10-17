@@ -1,7 +1,5 @@
 import React from 'react';
 import { Box, Grid, Typography } from '@mui/material';
-import InstagramIcon from '@material-ui/icons/Instagram';
-import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from "@material-ui/icons/GitHub";
 import './Footer.css'
@@ -23,8 +21,9 @@ function Footer() {
 
 
 
-  <div className="seila">  
-    <div className="footerContainerzao">
+  <div className="footerOut">  
+
+    <div className="footerIn">
 
         <Box className="copyright">
           <Typography>
@@ -44,12 +43,14 @@ function Footer() {
             <a 
               href="https://www.linkedin.com/in/mangiaco/"
               target="_blank"
+              className="iconeImagem"
             >
               <GitHubIcon style={{ fontSize: 35, color: "white" }} />
             </a>
             <a
               href="https://github.com/ManGiaco"
               target="_blank"
+              className="iconeImagem"
             >
               <LinkedInIcon style={{ fontSize: 40, color: "white" }} />
             </a>

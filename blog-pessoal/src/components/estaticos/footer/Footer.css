@@ -1,13 +1,13 @@
-.seila {
+.footerOut {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-  
   }
-  .footerContainerzao {
-    width: 73.75vw;
+  .footerIn {
+    width: 75vw;
     background-color:#000000;
+    border-radius: 0.75vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -38,11 +38,11 @@
     margin-top: 00.2vw;
     margin-bottom: 00.2vw;
   }
-  .icones a {
-    margin-left: 0.3vw;
-    margin-right: 0.3vw;
+  .iconeImagem {
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
   }
-  .icones a:hover {
+  .iconeImagem:hover {
     cursor: pointer;
     opacity: 0.5;
   }

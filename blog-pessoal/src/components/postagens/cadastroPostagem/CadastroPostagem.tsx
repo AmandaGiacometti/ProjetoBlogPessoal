@@ -59,7 +59,7 @@ import {
   
     useEffect(() => {
       if (token === '') {
-        alert('Ai não meu bom');
+        alert('Você precisa estar logado para continuar no blog');
         navigate('/login');
       }
     }, [token]);
@@ -202,5 +202,5 @@ import {
       </>
     );
   }
-  
+      
   export default CadastroPostagem;

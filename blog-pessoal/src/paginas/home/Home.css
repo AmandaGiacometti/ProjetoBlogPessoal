@@ -1,9 +1,29 @@
-.caxona {
+.homeCarrossel {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  
+}
+
+.carrossel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 72vw;
+  height: 40.5vw;
+  margin: 2vw;
+}
+
+.slide {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.caxona img {
-  margin: 1vw;
+
+.imagemSlide {
+
 }

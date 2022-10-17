@@ -58,7 +58,7 @@ function Login() {
         closeOnClick: true,
         pauseOnHover: true,
         draggable: true,
-        theme: "light",
+        theme: "dark",
       })
     } catch (error) {
       toast.error('Falha no login', {

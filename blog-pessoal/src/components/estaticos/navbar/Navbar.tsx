@@ -26,100 +26,98 @@ function Navbar() {
     if(token !== '') {
       navBarComponent = <AppBar position="static">
 
+   
+<div className="containerzao">
 
+  <div className="upperNav">
 
-      <div className="containerzao">
+      <div className="translate">
+        <img
+          className="ukFlag"
+          src="https://github.com/ManGiaco/BancoDeImagens/blob/main/%C3%8Dcones/Bandeira%20inglaterra.png?raw=true"
+          alt=""
+          width="20vw"
+          height="20vw"
+        />
+        <p className="clickTranslate">Translate</p>
+      </div>
 
-<div className="upperNav">
+      <div className="searchImage">
+        <img 
+        src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/%C3%8Dcones/Caixa%20de%20pesquisa.png" 
+        alt="" />
+      </div>
 
-    <div className="translate">
-      <img
-        className="ukFlag"
-        src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/uk.png"
-        alt=""
-        width="20vw"
-        height="20vw"
-      />
-      <p className="clickTranslate">Translate</p>
-    </div>
+  </div>
 
-    <div className="searchImage">
+  <div className="navCentral">
       <img 
-      src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/pesquisa.png" 
-      alt="" />
-    </div>
+      src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/P%C3%A1ginas%20feitas%20no%20Figma/Header%20barraca.png" 
+      alt="" 
+      className="fotoBarraca"
+      />
+  </div>
 
-</div>
-
-<div className="fotoBarraca">
-    <img 
-    src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/barraca.png" 
-    alt="" 
-    className="fotoFotoMesmo"
-    />
-</div>
-
-<div className="navbarPrincipal">      
-    <Box className="opcoes">
-      <Link to="/home">
-        <Typography>
-          Home
-        </Typography>
-      </Link>
-    </Box>
-
-    <Box className="opcoes">
-      <Link to="/posts">
-          <Typography>
-            Postagens
+  <div className="navbarPrincipal">      
+      <Box className="opcoes">
+        <Link to="/home">
+          <Typography className="opcoesTexto">
+            Home
           </Typography>
-      </Link>
-    </Box>
+        </Link>
+      </Box>
 
-    <Box className="opcoes">
-      <Link to="/temas" className="navLink">
+      <Box className="opcoes">
+        <Link to="/posts">
+            <Typography>
+              Postagens
+            </Typography>
+        </Link>
+      </Box>
+
+      <Box className="opcoes">
+        <Link to="/editarPost/:id">
+            <Typography>
+              Cadastrar Postagem
+            </Typography>
+        </Link>
+      </Box>
+
+      <Box className="opcoes">
+        <Link to="/temas" className="navLink">
+            <Typography>
+              Temas
+            </Typography>
+        </Link>
+      </Box>
+
+      <Box className="opcoes">
+        <Link to='/cadastroTema'>
           <Typography>
-            Temas
+            Cadastrar Tema
           </Typography>
-      </Link>
-    </Box>
+        </Link>
+      </Box>
 
-    <Box className="opcoes">
-      <Link to='/cadastroTema'>
+      <Box className="opcoes">
+        <Link to='/perfil'>
+          <Typography>
+            Perfil
+          </Typography>
+        </Link>
+      </Box>
+
+      <Box className="opcoes" onClick={goLogout}>
         <Typography>
-          Cadastrar Temas
+          Logout
         </Typography>
-      </Link>
-    </Box>
+      </Box>
 
-    <Box className="opcoes">
-      <Link to='/perfil'>
-        <Typography>
-          Perfil
-        </Typography>
-      </Link>
-    </Box>
-
-    <Box className="opcoes" onClick={goLogout}>
-      <Typography>
-        Logout
-      </Typography>
-    </Box>
-
+  </div>
 </div>
+</AppBar>
+}
 
-</div>
-
-
-
-
-
-
-
-    </AppBar>
-    }
-
-    
   return (
     <>
       {navBarComponent}
