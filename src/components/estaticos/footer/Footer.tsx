@@ -7,18 +7,18 @@ import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokenReducer';
 
 
-function Footer() {
+function Footer() 
+{
 
   const token = useSelector<TokenState, TokenState["tokens"]>(
     (state) => state.tokens
   )
 
-  let footerContent
+  let footerComponent;
 
-  if(token !== '') {
-    footerContent =
-
-
+  if(token !== '') 
+  {
+      footerComponent =
 
 
   <div className="footerOut">  
@@ -64,7 +64,7 @@ function Footer() {
 
  return (
    <>
-     {footerContent}
+     {footerComponent}
    </>
  );
 }
