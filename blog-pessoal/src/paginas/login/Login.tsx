@@ -8,6 +8,7 @@ import UsuarioLogin from '../../model/UsuarioLogin';
 import { login } from '../../services/Service';
 import { addToken, addId } from '../../store/tokens/action';
 import './Login.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Login() {
   let navigate = useNavigate();
