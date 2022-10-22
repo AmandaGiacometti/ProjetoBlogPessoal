@@ -48,7 +48,7 @@ function Home() {
 
           <SwiperSlide className="slide">
             <img 
-            src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/Fotos%20retangulares/cachadaco%20wide.jpg" 
+            src="https://github.com/ManGiaco/BancoDeImagens/blob/main/Estrada%20sem%20Fim/Fotos%20retangulares/cachadaco%20wide.jpg?raw=true" 
             alt="" 
             className="imagemSlide"
             />
@@ -56,7 +56,7 @@ function Home() {
 
           <SwiperSlide className="slide">
             <img 
-            src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/Fotos%20retangulares/madrugada%20wide.jpg" 
+            src="https://github.com/ManGiaco/BancoDeImagens/blob/main/Estrada%20sem%20Fim/Fotos%20retangulares/madrugada%20wide.jpg?raw=true" 
             alt="" 
             className="imagemSlide"
             />
@@ -64,7 +64,7 @@ function Home() {
 
           <SwiperSlide className="slide">
             <img 
-            src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/Fotos%20retangulares/noronha%20wide.jpg" 
+            src="https://github.com/ManGiaco/BancoDeImagens/blob/main/Estrada%20sem%20Fim/Fotos%20retangulares/noronha%20wide.jpg?raw=true" 
             alt="" 
             className="imagemSlide"
             />
@@ -72,7 +72,7 @@ function Home() {
 
           <SwiperSlide className="slide">
             <img 
-            src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/Fotos%20retangulares/lencois%20wide.jpg" 
+            src="https://github.com/ManGiaco/BancoDeImagens/blob/main/Estrada%20sem%20Fim/Fotos%20retangulares/lencois%20wide.jpg?raw=true" 
             alt="" 
             className="imagemSlide"
             />

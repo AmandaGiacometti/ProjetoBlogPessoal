@@ -34,7 +34,7 @@ function Navbar() {
       <div className="translate">
         <img
           className="ukFlag"
-          src="https://github.com/ManGiaco/BancoDeImagens/blob/main/%C3%8Dcones/Bandeira%20inglaterra.png?raw=true"
+          src="https://github.com/ManGiaco/BancoDeImagens/blob/main/Estrada%20sem%20Fim/%C3%8Dcones/Bandeira%20inglaterra.png?raw=true"
           alt=""
           width="20vw"
           height="20vw"
@@ -44,7 +44,7 @@ function Navbar() {
 
       <div className="searchImage">
         <img 
-        src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/%C3%8Dcones/Caixa%20de%20pesquisa.png" 
+        src="https://github.com/ManGiaco/BancoDeImagens/blob/main/Estrada%20sem%20Fim/%C3%8Dcones/Caixa%20de%20pesquisa.png?raw=true" 
         alt="" />
       </div>
 
@@ -52,7 +52,7 @@ function Navbar() {
 
   <div className="navCentral">
       <img 
-      src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/P%C3%A1ginas%20feitas%20no%20Figma/Header%20barraca.png" 
+      src="https://github.com/ManGiaco/BancoDeImagens/blob/main/Estrada%20sem%20Fim/P%C3%A1ginas%20feitas%20no%20Figma/Header%20barraca.png?raw=true" 
       alt="" 
       className="fotoBarraca"
       />

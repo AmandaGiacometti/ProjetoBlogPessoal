@@ -97,17 +97,17 @@ function Login() {
           
           <div className="coluna1Login">
               <img 
-              src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/Fotos%20retangulares/caatinga%20wide.jpeg" 
+              src="https://github.com/ManGiaco/BancoDeImagens/blob/main/Estrada%20sem%20Fim/Fotos%20retangulares/caatinga%20wide.jpeg?raw=true" 
               alt="" 
               className="polaroid"
               />
               <img 
-              src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/Fotos%20retangulares/noronha%20wide.jpg" 
+              src="https://github.com/ManGiaco/BancoDeImagens/blob/main/Estrada%20sem%20Fim/Fotos%20retangulares/noronha%20wide.jpg?raw=true" 
               alt="" 
               className="polaroid"
               />
               <img 
-              src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/Fotos%20retangulares/rio%20wide.jpg" 
+              src="https://github.com/ManGiaco/BancoDeImagens/blob/main/Estrada%20sem%20Fim/Fotos%20retangulares/rio%20wide.jpg?raw=true" 
               alt="" 
               className="polaroid"
               />
@@ -118,7 +118,7 @@ function Login() {
               
               <div className="header">
                 <img 
-                  src="https://github.com/ManGiaco/BancoDeImagens/blob/main/%C3%8Dcones/Logo%20do%20blog.png?raw=true" 
+                  src="https://github.com/ManGiaco/BancoDeImagens/blob/main/Estrada%20sem%20Fim/%C3%8Dcones/Logo%20do%20blog.png?raw=true" 
                   alt="" 
                   width=""
                   className="logo"
@@ -186,17 +186,17 @@ function Login() {
 
             <div className="coluna3Login">
               <img 
-              src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/Fotos%20retangulares/onca%20wide.jpg" 
+              src="https://github.com/ManGiaco/BancoDeImagens/blob/main/Estrada%20sem%20Fim/Fotos%20retangulares/onca%20wide.jpg?raw=true" 
               alt="" 
               className="polaroid"
               />
               <img 
-              src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/Fotos%20retangulares/paraty%20wide.jpg" 
+              src="https://github.com/ManGiaco/BancoDeImagens/blob/main/Estrada%20sem%20Fim/Fotos%20retangulares/paraty%20wide.jpg?raw=true" 
               alt="" 
               className="polaroid"
               />
               <img 
-              src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/Fotos%20retangulares/caprichoso%20wide.jpeg" 
+              src="https://github.com/ManGiaco/BancoDeImagens/blob/main/Estrada%20sem%20Fim/Fotos%20retangulares/caprichoso%20wide.jpeg?raw=true" 
               alt="" 
               className="polaroid"
               />

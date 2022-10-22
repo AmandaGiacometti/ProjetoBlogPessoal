@@ -81,17 +81,17 @@ function CadastroUsuario() {
 
           <div className="coluna1Cadastro">
               <img 
-              src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/Fotos%20retangulares/oxala%20wide.jpg" 
+              src="https://github.com/ManGiaco/BancoDeImagens/blob/main/Estrada%20sem%20Fim/Fotos%20retangulares/oxala%20wide.jpg?raw=true" 
               alt="" 
               className="polaroidd"
               />
               <img 
-              src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/Fotos%20retangulares/regia%20wide.jpg" 
+              src="https://github.com/ManGiaco/BancoDeImagens/blob/main/Estrada%20sem%20Fim/Fotos%20retangulares/regia%20wide.jpg?raw=true" 
               alt="" 
               className="polaroidd"
               />
               <img 
-              src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/Fotos%20retangulares/lencois%20wide.jpg" 
+              src="https://github.com/ManGiaco/BancoDeImagens/blob/main/Estrada%20sem%20Fim/Fotos%20retangulares/lencois%20wide.jpg?raw=true" 
               alt="" 
               className="polaroidd"
               />
@@ -207,17 +207,17 @@ function CadastroUsuario() {
 
           <div className="coluna3Cadasttro">
               <img 
-              src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/Fotos%20retangulares/cachadaco%20wide.jpg" 
+              src="https://github.com/ManGiaco/BancoDeImagens/blob/main/Estrada%20sem%20Fim/Fotos%20retangulares/cachadaco%20wide.jpg?raw=true" 
               alt="" 
               className="polaroidd"
               />
               <img 
-              src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/Fotos%20retangulares/tuiuiu%20wide.jpg" 
+              src="https://github.com/ManGiaco/BancoDeImagens/blob/main/Estrada%20sem%20Fim/Fotos%20retangulares/tuiuiu%20wide.jpg?raw=true" 
               alt="" 
               className="polaroidd"
               />
               <img 
-              src="https://raw.githubusercontent.com/ManGiaco/BancoDeImagens/main/Fotos%20retangulares/madrugada%20wide.jpg" 
+              src="https://github.com/ManGiaco/BancoDeImagens/blob/main/Estrada%20sem%20Fim/Fotos%20retangulares/madrugada%20wide.jpg?raw=true" 
               alt="" 
               className="polaroidd"
               />
