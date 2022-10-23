@@ -17,9 +17,11 @@ import './DeletarPostagem.css';
 import Postagem from '../../../model/Postagem';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokenReducer';
+import { toast } from 'react-toastify';
 
 function DeletarPostagem() {
   let history = useNavigate();
+  let navigate = useNavigate()
 
   const { id } = useParams<{ id: string }>();
 
@@ -30,11 +32,13 @@ function DeletarPostagem() {
   const [post, setPosts] = useState<Postagem>();
 
   useEffect(() => {
-    if (token === '') {
-      alert('Você precisa estar logado');
-      history('/login');
+    if(token === "")
+    {
+        toast.error("Você precisa estar logado!", {
+            position: "top-right", autoClose: 2000, hideProgressBar: true, closeOnClick: true, pauseOnHover: false, draggable: false, theme: "light", progress: undefined})
+        navigate ("/login")
     }
-  }, [token]);
+}, [token])
 
   useEffect(() => {
     if (id !== undefined) {
