@@ -40,6 +40,7 @@ function App() {
           <Route path="/apagarTema/:id" element={<DeletarTema />} />
 
           <Route path="/posts" element={<ListaPostagem />} />
+          <Route path="/criarPost" element={<CadastroPostagem />} />
           <Route path="/editarPost/:id" element={<CadastroPostagem />} />
           <Route path="/apagarPost/:id" element={<DeletarPostagem />} />
         </Routes>

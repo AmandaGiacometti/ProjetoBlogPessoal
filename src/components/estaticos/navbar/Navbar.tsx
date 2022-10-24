@@ -80,7 +80,7 @@ function Navbar() {
       </Box>
 
       <Box className="opcoes">
-        <Link to="/editarPost/:id">
+        <Link to="/criarPost">
             <Typography>
               Cadastrar Postagem
             </Typography>
