@@ -14,23 +14,22 @@ function Navbar() {
   const token = useSelector<TokenState, TokenState["tokens"]>(
     (state) => state.tokens
   )
-  let navigate = useNavigate()
 
-    function goLogout() 
-    {
+  /*let navigate = useNavigate()*/
+
+    function goLogout() {
         dispatch(addToken(''))
-        
         toast.info("Boa viagem pra casa!", {
           position: "top-right", autoClose: 2000, hideProgressBar: true, closeOnClick: true, pauseOnHover: false, draggable: false, theme: "dark", progress: undefined})
-        navigate("/login")
+        history("/login")
     }
 
     let navBarComponent
 
-    if(token !== '') {
+    /*if(token !== '') {*/
+
       navBarComponent = <AppBar position="static">
 
-   
 <div className="containerzao">
 
   <div className="upperNav">
@@ -72,55 +71,93 @@ function Navbar() {
       </Box>
 
       <Box className="opcoes">
-        <Link to="/posts">
+        <Link to="/posts/saopaulo">
             <Typography>
-              Postagens
+              São Paulo
             </Typography>
         </Link>
       </Box>
 
       <Box className="opcoes">
-        <Link to="/criarPost">
+        <Link to="/posts/brasil">
             <Typography>
-              Cadastrar Postagem
+              Brasil
             </Typography>
         </Link>
       </Box>
 
       <Box className="opcoes">
-        <Link to="/temas" className="navLink">
+        <Link to="/posts/mundo" className="navLink">
             <Typography>
-              Temas
+              Mundo
             </Typography>
         </Link>
       </Box>
 
       <Box className="opcoes">
-        <Link to='/cadastroTema'>
+        <Link to='/sobremim'>
           <Typography>
-            Cadastrar Tema
+            Sobre mim
           </Typography>
         </Link>
       </Box>
 
-      <Box className="opcoes">
-        <Link to='/perfil'>
-          <Typography>
-            Perfil
-          </Typography>
-        </Link>
-      </Box>
+      <Box>
+        <div className="navbarIcones">
+          <div className="dropdown">
 
-      <Box className="opcoes" onClick={goLogout}>
-        <Typography>
-          Logout
-        </Typography>
+            <img 
+            src="https://github.com/ManGiaco/BancoDeImagens/blob/main/Ref%C3%BAgio%20da%20Moda/%C3%8Dcones/Perfil%20branco.png?raw=true" 
+            alt=""
+            className="iconePerfil"
+            />
+            <div className="dropdown-content">
+
+              <Link to="/login">
+                  <Typography className="opcoesDropdown"> 
+                      Login
+                  </Typography> 
+              </Link>
+
+              <Link to="/posts">
+                  <Typography className="opcoesDropdown"> 
+                      Postagens
+                  </Typography> 
+              </Link>
+
+              <Link to="/criarPost">
+                  <Typography className="opcoesDropdown"> 
+                      Editar postagens
+                  </Typography> 
+              </Link>
+
+              <Link to="/temas">
+                  <Typography className="opcoesDropdown"> 
+                      Temas
+                  </Typography> 
+              </Link>
+
+              <Link to="/cadastroTema">
+                  <Typography className="opcoesDropdown"> 
+                      Editar temas
+                  </Typography> 
+              </Link>
+
+
+
+              <Typography onClick={goLogout} className="opcoesDropdown"> 
+                Logout
+              </Typography> 
+            
+            </div>
+          </div>
+        </div>
       </Box>
 
   </div>
 </div>
 </AppBar>
-}
+
 
   return (
     <>

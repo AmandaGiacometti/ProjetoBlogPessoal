@@ -91,7 +91,60 @@
     text-decoration: none;
   }
   
-  
+  .navbarIcones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    /* height: 5vw; */
+}
+
+.dropdown {
+    display: inline-block;
+    /* position: relative; */
+    overflow: visible;
+}
+.iconePerfil {
+    width: 3vw;
+    margin: 0.75vw !important;
+}
+.iconePerfil:hover {
+    opacity: 0.5;
+    cursor: pointer;    
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 10vw;
+    overflow: visible;
+    background-color: #8806BF;
+    margin-left: -2.5rem;
+    
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    overflow: visible;   
+    z-index: 5;
+
+}
+.opcoesDropdown {
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 1.1vw !important;
+    padding: 5px;
+    text-decoration: none;
+    overflow: visible;
+    z-index: 5;
+}
+
+.opcoesDropdown:hover {
+    color: #8806BF;
+    background-color: white;
+    overflow: visible;
+}
+
   /*     Lista de opções de CSS pra ficar de olho
   
   list-style-type: none;

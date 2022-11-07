@@ -3,12 +3,14 @@ import { Box } from '@mui/system';
 import React, { ChangeEvent, useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Link, useNavigate, useParams } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import useLocalStorage from 'react-use-localstorage';
 import Tema from '../../../model/Tema';
 import { buscaId, post, put } from '../../../services/Service';
 import { TokenState } from '../../../store/tokens/tokenReducer';
 
-function CadastroTema() {
+function CadastroTema() 
+{
   let navigate = useNavigate();
 
   const { id } = useParams<{ id: string }>();
@@ -24,7 +26,8 @@ function CadastroTema() {
 
   useEffect(() => {
     if (token === '') {
-      alert('Ta tirando');
+      toast.error("Você precisa estar logado para fazer isso!", {
+        position: "top-center", autoClose: 3000, hideProgressBar: true, closeOnClick: true, pauseOnHover: false, draggable: false, theme: "light", progress: undefined})
       navigate('/login');
     }
   }, [token]);
@@ -56,20 +59,24 @@ function CadastroTema() {
         await put('/temas', tema, setTema, {
           headers: {'Authorization': token}
         })
-        alert('Tema atualizado com sucesso')
+        toast.success("Categoria atualizada com sucesso!", {
+          position: "top-right", autoClose: 2000, hideProgressBar: false, closeOnClick: true, pauseOnHover: false, draggable: false, theme: "colored", progress: undefined})
         navigate('/temas')
       } catch (error) {
-        alert('Falha ao atualizar o tema, reveja o nome, por favor')
+        toast.success("Falha ao atualizar o tema", {
+          position: "top-right", autoClose: 2000, hideProgressBar: false, closeOnClick: true, pauseOnHover: false, draggable: false, theme: "colored", progress: undefined})
       }
     } else {
       try {
         await post('/temas', tema, setTema, {
           headers: {'Authorization': token}
         })
-        alert('Tema cadastrado com sucesso')
+        toast.success("Tema cadastrado com sucesso", {
+          position: "top-right", autoClose: 2000, hideProgressBar: false, closeOnClick: true, pauseOnHover: false, draggable: false, theme: "colored", progress: undefined})
         navigate('/temas')
       } catch (error) {
-        alert('Falha ao criar o novo tema, por favor, verifique o nome.')
+        toast.success("Falha ao atualizar o tema", {
+          position: "top-right", autoClose: 2000, hideProgressBar: false, closeOnClick: true, pauseOnHover: false, draggable: false, theme: "colored", progress: undefined})
       }
     }
   }
